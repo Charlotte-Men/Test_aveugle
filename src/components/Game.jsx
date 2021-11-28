@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {quizzSongs} from './bddSongs';
 import {useNavigate, useParams} from 'react-router-dom';
 import TextReading from './TextReading';
 import TimerButton from './timerButton'
@@ -7,7 +6,7 @@ import YoutubeVid from './video';
 import styles from './Game.module.css';
 
 
-function Game({ setScore, score , num, total, setTotal}) {
+function Game({ setScore, score , num, total, setTotal, quizzSongs}) {
     let navigate = useNavigate();
     let { id } = useParams();
 
@@ -16,7 +15,6 @@ function Game({ setScore, score , num, total, setTotal}) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [ userChoice, setUserChoice ] = useState();
     const [ message, setMessage ] = useState('');
-    
 
     useEffect(() => {
         if (songID < 13) {
@@ -31,19 +29,18 @@ function Game({ setScore, score , num, total, setTotal}) {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     function displayVideo(choice) {
-            setIsPlaying(!isPlaying);
-            setTotal(total +1);
-            if (choice === song.title) {
-               setUserChoice(song.goodVideo);
-               setMessage('Bon jeu ! C\'était bien ça :')
-               setScore(score +1);
-                }
-    
-            else {
-                setUserChoice(song.wrongVideo);
-                setMessage('Mauvaise réponse. Tu mérites ça :');
-                }
+        setIsPlaying(!isPlaying);
+        setTotal(total +1);
+        if (choice === song.title) {
+            setUserChoice(song.goodVideo);
+            setMessage('Bon jeu ! C\'était bien ça :')
+            setScore(score +1);
         }
+        else {
+            setUserChoice(song.wrongVideo);
+            setMessage('Mauvaise réponse. Tu mérites ça :');
+        }
+    }
 
     function goForward() {
         setSongID(parseInt(id)+1)
@@ -62,16 +59,16 @@ function Game({ setScore, score , num, total, setTotal}) {
                 <div onClick={()=>displayVideo(shuffleResponses[0])} className={styles.GameTextSongDiv}><p className={styles.GameTextSong}>{shuffleResponses[0]}</p></div>
                 <div onClick={()=>displayVideo(shuffleResponses[1])} className={styles.GameTextSongDiv}><p className={styles.GameTextSong}>{shuffleResponses[1]}</p></div>
                 <div onClick={()=>displayVideo(shuffleResponses[2])} className={styles.GameTextSongDiv}><p className={styles.GameTextSong}>{shuffleResponses[2]}</p></div>
-                </div> : 
-                <div>
-                    <h2 className={styles.GameTextMessage}>{message}</h2>
-                    <div className={styles.GameVideoDiv}>
-                    <YoutubeVid embedId= {userChoice}/>
-                    </div>
-                    <button onClick={goForward} className={styles.GameTextButtonSong}> Prochaine chanson </button>
+            </div> : 
+            <div>
+                <h2 className={styles.GameTextMessage}>{message}</h2>
+                <div className={styles.GameVideoDiv}>
+                <YoutubeVid embedId= {userChoice}/>
                 </div>
-                }
+                <button onClick={goForward} className={styles.GameTextButtonSong}> Prochaine chanson </button>
             </div>
+            }
+        </div>
     )
 }
 export default Game;

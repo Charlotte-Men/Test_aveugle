@@ -118,6 +118,4 @@ const sortedQuizzSongs = [
     },
   ];
 
-const quizzSongs = sortedQuizzSongs.sort(()=> Math.random() - 0.5);
-
-export {quizzSongs};
+export {sortedQuizzSongs};

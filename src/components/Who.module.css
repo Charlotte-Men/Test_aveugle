@@ -1,0 +1,57 @@
+.WhoTitle{
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #f8B206;
+  animation: lighttext 3s infinite;
+}
+@keyframes lighttext {
+  0% {
+    color: #f8B206;
+  }
+  1% {
+    color: #c28c03;
+  }
+  5% {
+    color: #f8B206;
+  }
+  6% {
+    color: #c28c03;
+  }
+  25% {
+    color: #f8B206;
+  }
+  100% {
+    color: #f8B206;
+  }
+}
+
+.WhoText{
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    margin: 1vh 2vw;
+}
+
+.WhoH2{
+  margin-top: 8vh;
+  margin-bottom: 1.8vh;
+  font-size: 2.5vw;
+  color: #ba2184;
+  text-align: center;
+}
+
+.WhoLi{
+  margin-left: 19vw;
+  margin-right: 19vw;
+  color: #237ab4;
+  font-size: 1.5vw;
+  margin-bottom: 01vh;
+}
+
+.WhoSpan{
+  color: white;
+}
