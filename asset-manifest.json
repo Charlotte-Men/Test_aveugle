@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pussycat-trolls/static/css/main.9a2e7065.chunk.css",
+    "main.js": "/pussycat-trolls/static/js/main.3ed8b02f.chunk.js",
+    "main.js.map": "/pussycat-trolls/static/js/main.3ed8b02f.chunk.js.map",
+    "runtime-main.js": "/pussycat-trolls/static/js/runtime-main.a68f47dd.js",
+    "runtime-main.js.map": "/pussycat-trolls/static/js/runtime-main.a68f47dd.js.map",
+    "static/js/2.15db623c.chunk.js": "/pussycat-trolls/static/js/2.15db623c.chunk.js",
+    "static/js/2.15db623c.chunk.js.map": "/pussycat-trolls/static/js/2.15db623c.chunk.js.map",
+    "static/js/3.8c32f828.chunk.js": "/pussycat-trolls/static/js/3.8c32f828.chunk.js",
+    "static/js/3.8c32f828.chunk.js.map": "/pussycat-trolls/static/js/3.8c32f828.chunk.js.map",
+    "index.html": "/pussycat-trolls/index.html",
+    "static/css/main.9a2e7065.chunk.css.map": "/pussycat-trolls/static/css/main.9a2e7065.chunk.css.map",
+    "static/js/2.15db623c.chunk.js.LICENSE.txt": "/pussycat-trolls/static/js/2.15db623c.chunk.js.LICENSE.txt",
+    "static/media/Footer.eabb2ea8.png": "/pussycat-trolls/static/media/Footer.eabb2ea8.png",
+    "static/media/glitter.32a6c660.gif": "/pussycat-trolls/static/media/glitter.32a6c660.gif",
+    "static/media/logodiag.8e5f6232.png": "/pussycat-trolls/static/media/logodiag.8e5f6232.png",
+    "static/media/queen.5a180d5a.png": "/pussycat-trolls/static/media/queen.5a180d5a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a68f47dd.js",
+    "static/js/2.15db623c.chunk.js",
+    "static/css/main.9a2e7065.chunk.css",
+    "static/js/main.3ed8b02f.chunk.js"
+  ]
+}
