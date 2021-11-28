@@ -1,30 +1,38 @@
-import React, {useState} from 'react';
-import { Routes, Link, Route, useParams } from 'react-router-dom';
+import React, { useState} from 'react';
+import { Routes, Route, useParams, useNavigate, Link } from 'react-router-dom';
+
+
 
 import Game from './components/Game';
 import Home from './components/Home';
 import End from './components/End';
+import Who from './components/WhosWho';
+import {sortedQuizzSongs} from './components/bddSongs';
 
 import styles from './App.module.css';
 import Logo from './assets/logodiag.png';
 import Footer from './assets/Footer.png';
 import Queen from './assets/queen.png';
 
-
-
 function App() {
+  let navigate = useNavigate();
+
   const [ score, setScore ] = useState(0);
   const [ total, setTotal ] = useState(0);
   let { id } = useParams();
+  const [quizzSongs, setQuizzSongs] = useState(sortedQuizzSongs);
+
+  function resetGame() {
+    navigate("/");
+    setQuizzSongs(sortedQuizzSongs.sort(()=> Math.random() - 0.5));
+    setScore(0);
+    setTotal(0);
+  }
 
   return (
-
-
   <div className={styles.mainContainer}>
     <nav>
-      <Link to={'/'}>
-        <img src={Logo} alt="test aveugle logo" className={styles.logo} />
-      </Link>
+        <img src={Logo} alt="test aveugle logo" className={styles.logo} onClick={() => resetGame()}/>
     </nav>
     <img src={Queen} alt="portrait of Queen Elizabeth" className={styles.queen} />
     <div className={styles.score}>
@@ -36,9 +44,10 @@ function App() {
       <div className={styles.screen1}>
         <div className={styles.glass1}>
         <Routes>
-          <Route exact path='/' element={<Home />}></Route>
-          <Route path ='/:id' element={<Game num={id} setScore={setScore} score={score} setTotal={setTotal} total={total}/>}></Route>
-          <Route exact path='/End' element={<End />}></Route>
+          <Route exact path='/' element={<Home setQuizzSongs={setQuizzSongs} />}></Route>
+          <Route path ='/:id' element={<Game num={id} setScore={setScore} score={score} setTotal={setTotal} total={total} quizzSongs={quizzSongs} />}></Route>
+          <Route path='/End' element={<End resetGame={resetGame}/>}></Route>
+          <Route path='/Who' element={<Who/>}></Route>
         </Routes>
         </div>
       </div>
@@ -78,8 +87,12 @@ function App() {
           </div>
         </div>
       <div className={styles.legs}></div>
-      <img src={Footer} alt="message with love" className={styles.footer} />
     </div>
+      <div className={styles.footerContainer}>
+        <Link to='/Who'>
+          <img src={Footer} alt="message with love" className={styles.footer} />
+        </Link>
+      </div>
   </div>
 
 );
