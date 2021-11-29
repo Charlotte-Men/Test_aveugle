@@ -22,7 +22,7 @@ function Home( setQuizzSongs ){
 
             <h2 className={styles.HomeH2}>Règles</h2>
             <ul>
-                <li className={styles.HomeLi}><span className={styles.HomeSpan}>Un extrait de chanson anglaise traduite en français vous sera proposé.</span></li>
+                <li className={styles.HomeLi}><span className={styles.HomeSpan}>Un extrait de chanson anglaise traduit en français vous sera proposé.</span></li>
                 <li className={styles.HomeLi}><span className={styles.HomeSpan}>Vous aurez 3 propositions de chansons.</span></li>
                 <li className={styles.HomeLi}><span className={styles.HomeSpan}>A vous de trouver la bonne réponse pour découvrir l'extrait vidéo correspondant ! </span></li>
             </ul>
