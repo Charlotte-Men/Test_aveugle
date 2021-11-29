@@ -21,7 +21,7 @@ function Who(){
           <p className={styles.WhoLi}>Charlotte</p>
         </div>
         <div className={styles.nameContainer}>
-          <a href="hhttps://www.linkedin.com/in/m%C3%A9lissa-olas/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/m%C3%A9lissa-olas/" target="_blank" rel="noreferrer">
             <img className={styles.LinkedinLogo} src={logo} alt="LinkedIn logo" />
           </a>
           <p className={styles.WhoLi}>Mélissa</p>
