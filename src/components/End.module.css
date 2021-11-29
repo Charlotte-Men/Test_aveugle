@@ -10,7 +10,7 @@
 .EndGif{
     margin: auto;
     display: flex;
-    width: 50vh;
+    width: 45vh;
     margin-bottom: 10px;
 }
 
@@ -42,4 +42,5 @@
 
 .EndButton:hover{
     cursor: pointer;
+    background-color: #d82e9d;
 }
