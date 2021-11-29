@@ -39,6 +39,7 @@
 
 .GameTextSong:hover{
     cursor: pointer;
+    background-color: #2c90d3;
 }
 .GameTextMessage{
     display: flex;
@@ -66,6 +67,7 @@
 }
 .GameTextButtonSong:hover{
     cursor: pointer;
+    background-color: #d82e9d;
 }
 
 .GameVideoDiv{

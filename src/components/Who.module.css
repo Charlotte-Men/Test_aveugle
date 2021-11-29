@@ -37,21 +37,31 @@
 }
 
 .WhoH2{
-  margin-top: 8vh;
+  margin-top: 6vh;
   margin-bottom: 1.8vh;
   font-size: 2.5vw;
   color: #ba2184;
   text-align: center;
 }
 
-.WhoLi{
-  margin-left: 19vw;
-  margin-right: 19vw;
-  color: #237ab4;
-  font-size: 1.5vw;
-  margin-bottom: 01vh;
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.WhoSpan{
+.nameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LinkedinLogo{
+  width: 1.5vw;
+}
+
+.WhoLi{
   color: white;
+  font-size: 1.5vw;
+  width: 7vw;
+  margin: 0.5vw;
 }
