@@ -1,6 +1,7 @@
 # Welcome to Test-Aveugle's repo !
 
-To give you some context, this project has been created during a 24h coding Hackathon, organized by Wild Code School, whose theme was MUSIC. The Pussycat Trolls' team was formed by Ambre Thevenin, Melissa Olas, Sophie Lepert and I, Charlotte Ménard. 
+This project has been created during a 24h coding Hackathon, organized by Wild Code School, whose theme was MUSIC 🎵<br/>
+👑 The Pussycat Trolls' team was formed by Ambre Thevenin, Melissa Olas, Sophie Lepert and I, Charlotte Ménard. 
 This project uses : 
 <br/>
 
@@ -13,5 +14,7 @@ This project uses :
 This project is using create-react-app // To start the project, use npm start
 
 
-###### You can see the live website (slightly updated) here : http://test-aveugle.herokuapp.com
-###### and the original website here : https://github.com/Charlotte-Men/Test_aveugle_origin
+###### 💻 You can see the live website (slightly updated) [here](http://test-aveugle.herokuapp.com)
+###### and the original website [here](https://github.com/Charlotte-Men/Test_aveugle_origin)
+
+:speech_balloon: If you enjoyed it, feel free to contact me on [linkedin](https://www.linkedin.com/in/charlotte-menard/).
